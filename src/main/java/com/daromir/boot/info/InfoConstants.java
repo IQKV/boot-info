@@ -19,7 +19,7 @@ package com.daromir.boot.info;
 /**
  * App runtime constants.
  */
-public final class Constants {
+public final class InfoConstants {
 
   public static final String SYSTEM = "system";
 
@@ -39,6 +39,6 @@ public final class Constants {
   public static final String SPRING_PROFILE_PRODUCTION = "prod";
 
 
-  private Constants() {
+  private InfoConstants() {
   }
 }
