@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 IQKV Team, and the original author or authors from the JHipster project.
+ * Copyright 2025 Expertness Team, and the original author or authors from the JHipster project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.iqkv.boot.info;
+package expert.uses.boot.info;
 
 /**
  * App runtime constants.
  */
-public final class Constants {
+public final class InfoConstants {
 
   public static final String SYSTEM = "system";
 
@@ -39,6 +39,6 @@ public final class Constants {
   public static final String SPRING_PROFILE_PRODUCTION = "prod";
 
 
-  private Constants() {
+  private InfoConstants() {
   }
 }

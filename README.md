@@ -1,4 +1,4 @@
-# Gathering project info
+# ✨ Gathering project info
 
 ## Versioning
 

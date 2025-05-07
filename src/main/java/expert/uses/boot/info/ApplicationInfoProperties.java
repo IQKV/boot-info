@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 IQKV Team, and the original author or authors from the JHipster project.
+ * Copyright 2025 Expertness Team, and the original author or authors from the JHipster project.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,16 +14,26 @@
  * limitations under the License.
  */
 
-package com.iqkv.boot.info;
+package expert.uses.boot.info;
 
 import jakarta.validation.constraints.NotNull;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties("application-settings.client-application")
-public record ClientApplicationProperties(@NotNull String name) {
+@ConfigurationProperties("expertness.info")
+public record ApplicationInfoProperties(@NotNull String version,
+                                             @NotNull String description,
+                                             @NotNull String relativePath) {
 
-  public String getName() {
-    return name();
+  public String getVersion() {
+    return version();
+  }
+
+  public String getDescription() {
+    return description();
+  }
+
+  public String getRelativePath() {
+    return relativePath();
   }
 }
