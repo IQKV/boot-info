@@ -14,16 +14,26 @@
  * limitations under the License.
  */
 
-package expert.uses.boot.info;
+package com.iqkv.boot.info;
 
 import jakarta.validation.constraints.NotNull;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties("expertness.client-application")
-public record ClientApplicationProperties(@NotNull String name) {
+@ConfigurationProperties("expertness.info")
+public record ApplicationInfoProperties(@NotNull String version,
+                                             @NotNull String description,
+                                             @NotNull String relativePath) {
 
-  public String getName() {
-    return name();
+  public String getVersion() {
+    return version();
+  }
+
+  public String getDescription() {
+    return description();
+  }
+
+  public String getRelativePath() {
+    return relativePath();
   }
 }

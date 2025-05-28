@@ -14,31 +14,16 @@
  * limitations under the License.
  */
 
-package expert.uses.boot.info;
+package com.iqkv.boot.info;
 
-/**
- * App runtime constants.
- */
-public final class InfoConstants {
+import jakarta.validation.constraints.NotNull;
 
-  public static final String SYSTEM = "system";
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
-  /**
-   * Constant <code>SPRING_PROFILE_DEVELOPMENT="dev"</code>
-   */
-  public static final String SPRING_PROFILE_DEVELOPMENT = "dev";
+@ConfigurationProperties("expertness.client-application")
+public record ClientApplicationProperties(@NotNull String name) {
 
-  /**
-   * Constant <code>SPRING_PROFILE_TEST="test"</code>
-   */
-  public static final String SPRING_PROFILE_TEST = "test";
-
-  /**
-   * Constant <code>SPRING_PROFILE_PRODUCTION="prod"</code>
-   */
-  public static final String SPRING_PROFILE_PRODUCTION = "prod";
-
-
-  private InfoConstants() {
+  public String getName() {
+    return name();
   }
 }

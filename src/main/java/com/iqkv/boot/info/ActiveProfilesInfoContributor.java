@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package expert.uses.boot.info;
+package com.iqkv.boot.info;
 
 import java.util.Arrays;
 import java.util.List;

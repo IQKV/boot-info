@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package expert.uses.boot.info;
+package com.iqkv.boot.info;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
