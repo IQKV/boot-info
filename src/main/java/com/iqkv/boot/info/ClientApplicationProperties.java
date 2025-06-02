@@ -20,7 +20,7 @@ import jakarta.validation.constraints.NotNull;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties("expertness.client-application")
+@ConfigurationProperties("application-configuration.client-application")
 public record ClientApplicationProperties(@NotNull String name) {
 
   public String getName() {

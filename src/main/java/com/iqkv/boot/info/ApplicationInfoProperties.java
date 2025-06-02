@@ -20,7 +20,7 @@ import jakarta.validation.constraints.NotNull;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties("expertness.info")
+@ConfigurationProperties("application-configuration.info")
 public record ApplicationInfoProperties(@NotNull String version,
                                              @NotNull String description,
                                              @NotNull String relativePath) {
